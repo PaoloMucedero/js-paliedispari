@@ -17,14 +17,20 @@ if (reverse(userWord) === userWord) {
 
 // Creo funzione per ribaltare parola
 //const parolaReversed = reverse("ciao")
-function reverse(parola) {
+/*function reverse(parola) {
     let risultato = "";
 
     for (let i = parola.length - 1; i >= 0; i--) {
         risultato = risultato + parola[i];
     }
     return risultato
-};
+};*/
 
 console.log (palindroma);
 console.log(`Parola inserita: ${userWord} 👉 ${palindroma}`);
+
+
+// REVERSE con funzioni .split .reverse .join
+function reverse(parola) {
+    return reverse = userWord.split("").reverse().join("");
+}
