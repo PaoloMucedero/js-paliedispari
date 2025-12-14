@@ -3,8 +3,20 @@ Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
  */
 
+// CHIEDO ALL'UTENTE DI SCRIVERE UNA PAROLA
+const userWord = prompt("Scrivi qui!");
+
+let palindroma;
+
+// CONFRONTO LE PAROLE
+if (reverse(userWord) === userWord) {
+    palindroma = "La parola inserita è palindroma";
+} else {
+    palindroma = "La parola inserita non è palindroma"
+}
+
 // Creo funzione per ribaltare parola
-const parolaReversed = reverse("ciao")
+//const parolaReversed = reverse("ciao")
 function reverse(parola) {
     let risultato = "";
 
@@ -14,4 +26,5 @@ function reverse(parola) {
     return risultato
 };
 
-console.log (parolaReversed)
+console.log (palindroma);
+console.log(`Parola inserita: ${userWord} 👉 ${palindroma}`);
