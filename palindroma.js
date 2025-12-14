@@ -8,7 +8,7 @@ const userWord = prompt("Scrivi qui!");
 
 let palindroma;
 
-// CONFRONTO LE PAROLE
+// CONFRONTO LE PAROLE /* Così differenzia tra maiuscole e minuscole.... AnNa non è palindromo */
 if (reverse(userWord) === userWord) {
     palindroma = "La parola inserita è palindroma";
 } else {
